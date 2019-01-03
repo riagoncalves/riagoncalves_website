@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, path: ''
 
   devise_scope :admin do
     get 'login', to: 'devise/sessions#new', as: :new_main_admin_session
