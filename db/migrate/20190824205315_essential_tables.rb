@@ -9,14 +9,14 @@ class EssentialTables < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    create_table :skills do |t|
+    create_table :skill do |t|
       t.string :icon
       t.string :name
 
       t.timestamps
     end
 
-    create_table :contacts do |t|
+    create_table :contact do |t|
       t.string :icon
       t.string :social
       t.string :link
