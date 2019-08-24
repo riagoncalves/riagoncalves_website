@@ -5,6 +5,22 @@
 html, body, .container {
   width: 100%;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
+	position: relative;
+	background-color: $main-gray;
+}
+
+html {
+	overflow-y: hidden;
+}
+
+body {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+section, footer {
+  padding: 50px 10vw;
 }
 
 .container {

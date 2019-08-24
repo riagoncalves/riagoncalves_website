@@ -13,20 +13,25 @@
  *= require_self
  */
 
-/* Reset */
-@import 'base/reset';
 
  /* Tools */
 @import 'tools/mixins';
 @import 'tools/variables';
 
+ /* Base */
+ @import 'base/reset';
+ @import 'base/page';
+
 /* Settings */
 @import 'settings/responsive-settings';
 @import 'settings/text';
+
+/* Components */
+@import 'components/header';
+@import 'components/content';
+@import 'components/footer';
 
 /* Objects */
 @import 'objects/inputs';
 @import 'objects/buttons';
 
- /* Base */
- @import 'base/page';

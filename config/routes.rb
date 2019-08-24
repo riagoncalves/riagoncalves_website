@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :admins, path: ''
-
+  
+  root to: 'home#index'
+  
   devise_scope :admin do
     get 'login', to: 'devise/sessions#new', as: :new_main_admin_session
     post 'login', to: 'devise/sessions#create', as: :main_admin_session

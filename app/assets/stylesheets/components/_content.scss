@@ -1,0 +1,55 @@
+
+main {
+  .s-1 {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/lisbon.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+
+    .bot-fade {
+      position: absolute;
+      width: 100vw;
+      height: 20vh;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, transparent, rgba(53, 53, 53, 1));
+    }
+  }
+
+  .ig-profile {
+    border: 1px solid $black;
+    border-radius: 50%;
+    transition: 200ms all;
+
+    &:hover {
+       transform: scale(1.2);
+     }
+  }
+
+  .s-2 {
+    padding-bottom: 0;
+    
+    &:after {
+      content: "";
+      margin-top: 50px;
+      height: 3px;
+      background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(255,255,255,1) 50%,rgba(0,0,0,0) 100%);
+      display: block;
+    }
+  }
+  .skills {
+    padding-top: 20px;
+
+    object {
+      width: 100%;
+      max-width: 150px;
+      padding: 25px;
+      transition: 200ms all;
+
+     &:hover {
+       transform: scale(1.2);
+     } 
+    }
+  }
+}
