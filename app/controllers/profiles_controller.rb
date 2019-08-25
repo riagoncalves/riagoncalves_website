@@ -3,22 +3,6 @@ class ProfilesController < ApplicationController
 
   def show
   end
-  
-  def new
-    @profile = Profile.new
-  end
-
-  def create
-    @profile = Profile.new(profile_params)
-
-    respond_to do |format|
-      if @profile.save
-        format.html { redirect_to profile_path(@profile), notice: 'Profile was successfully created.' }
-      else
-        format.html { render :new }
-      end
-    end
-  end
 
   def edit
   end
@@ -43,7 +27,7 @@ class ProfilesController < ApplicationController
   private
 
   def set_profile
-    @profile = Profile.find(params[:id])
+    @profile = Profile.instance
   end
 
   def profile_params
