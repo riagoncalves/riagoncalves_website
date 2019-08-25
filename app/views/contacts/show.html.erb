@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Icon</strong>
+  <%= image_tag @contact.icon.url %>
+</p>
+
+<p>
+  <strong>Social</strong>
+  <%= @contact.social %>
+</p>
+
+<p>
+  <strong>Link</strong>
+  <%= @contact.link %>
+</p>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
