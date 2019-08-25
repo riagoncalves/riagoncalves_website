@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2019_08_24_205315) do
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
 
-  create_table "contact", force: :cascade do |t|
+  create_table "contacts", force: :cascade do |t|
     t.string "icon"
     t.string "social"
     t.string "link"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2019_08_24_205315) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "profile", force: :cascade do |t|
+  create_table "profiles", force: :cascade do |t|
     t.string "image"
     t.string "name"
     t.string "description"
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2019_08_24_205315) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "skill", force: :cascade do |t|
+  create_table "skills", force: :cascade do |t|
     t.string "icon"
     t.string "name"
     t.datetime "created_at", null: false

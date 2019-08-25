@@ -11,9 +11,9 @@ Rails.application.routes.draw do
 
   authenticated :admin do
     resources :admins
+    resources :profiles
+    resources :skills
+    resources :contacts
   end
 
-  resources :profiles
-  resources :skills
-  resources :contacts
 end

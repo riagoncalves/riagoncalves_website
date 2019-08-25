@@ -1,7 +1,7 @@
 class EssentialTables < ActiveRecord::Migration[5.2]
   def change
 
-    create_table :profile do |t|
+    create_table :profiles do |t|
       t.string :image
       t.string :name
       t.string :description
@@ -9,14 +9,14 @@ class EssentialTables < ActiveRecord::Migration[5.2]
       t.timestamps
     end
 
-    create_table :skill do |t|
+    create_table :skills do |t|
       t.string :icon
       t.string :name
 
       t.timestamps
     end
 
-    create_table :contact do |t|
+    create_table :contacts do |t|
       t.string :icon
       t.string :social
       t.string :link
