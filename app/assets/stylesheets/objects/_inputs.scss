@@ -29,7 +29,7 @@ input[type=text], input[type=email], input[type=password] {
   &:focus, &:hover {
     outline: none;
     border-bottom: 1px solid $blue;
-    border-image: linear-gradient(to right, $blue-light, $blue);
+    border-image: linear-gradient(to right, $main-gray-2, $main-gray);
     border-image-slice: 1;
   }
 

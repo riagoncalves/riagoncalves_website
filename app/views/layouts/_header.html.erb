@@ -1,0 +1,9 @@
+<header>
+  <nav>
+    <%= link_to 'Home', root_path %>
+    <%= link_to 'Profile', profile_path(Profile.instance) %>
+    <%= link_to 'Skills', skills_path %>
+    <%= link_to 'Contacts', contacts_path %>
+    <%= link_to 'Logout', :main_admin_destroy, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </nav>
+</header>

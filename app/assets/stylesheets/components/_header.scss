@@ -1,6 +1,17 @@
 header {
   width: 100%;
-  display: none;
-  position: absolute;
-  background-color: transparent;
+  display: block;
+  background-color: $main-gray;
+  border-bottom: 2px solid $white;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  a {
+    padding: 5px;
+    color: $white;
+  }
 }

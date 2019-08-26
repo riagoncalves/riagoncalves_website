@@ -6,11 +6,11 @@
   transition: all 0.2s;
 
   &-primary {
-    background-color: $blue;
+    background-color: $main-gray;
   }
 
   &:hover, &:focus {
-    transform: scale(0.9);
+    transform: scale(1.1);
   }
 
 }
