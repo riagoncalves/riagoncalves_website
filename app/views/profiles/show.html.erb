@@ -1,20 +1,22 @@
-<p id="notice"><%= notice %></p>
+<section>
+  <p id="notice"><%= notice %></p>
 
-<% if @profile.image.url %>
+  <% if @profile.image.url %>
+    <p>
+      <strong>Image</strong>
+      <%= image_tag @profile.image.url %>
+    </p>
+  <% end %>
+
   <p>
-    <strong>Image</strong>
-    <%= image_tag @profile.image.url %>
+    <strong>Name</strong>
+    <%= @profile.name %>
   </p>
-<% end %>
 
-<p>
-  <strong>Name</strong>
-  <%= @profile.name %>
-</p>
+  <p>
+    <strong>Description</strong>
+    <%= @profile.description %>
+  </p>
 
-<p>
-  <strong>Description</strong>
-  <%= @profile.description %>
-</p>
-
-<%= link_to 'Edit', edit_profile_path(@profile) %>
+  <%= link_to 'Edit', edit_profile_path(@profile) %>
+</section>

@@ -1,0 +1,14 @@
+table {
+  width: 80%;
+  margin: 0 auto;
+  color: $white;
+
+  th {
+    font-weight: $bold;
+    padding: 5px;
+  }
+
+  th, td {
+    border: 1px solid $white;
+  }
+}

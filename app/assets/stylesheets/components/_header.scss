@@ -4,6 +4,11 @@ header {
   background-color: $main-gray;
   border-bottom: 2px solid $white;
 
+  section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   nav {
     display: flex;
     align-items: center;
