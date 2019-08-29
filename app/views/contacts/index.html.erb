@@ -1,7 +1,14 @@
 <section>
   <p id="notice"><%= notice %></p>
 
-  <h2>Contacts</h2>
+  <div class="control-bar">
+    <div class="flex justc-c align-c">
+      <h3 class="flex-1">Contacts</h3>
+      <div class="flex-1 tar">
+        <%= link_to 'Create', new_contact_path, class: 'btn btn-secundary' %>
+      </div>
+    </div>
+  </div>
 
   <table>
     <thead>
@@ -25,7 +32,4 @@
     </tbody>
   </table>
 
-  <br>
-
-  <%= link_to 'New Contact', new_contact_path %>
 </section>

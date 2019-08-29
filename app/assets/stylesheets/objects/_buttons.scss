@@ -9,6 +9,11 @@
     background-color: $main-gray;
   }
 
+  &-secundary {
+    color: $main-gray;
+    background-color: $white;
+  }
+
   &:hover, &:focus {
     transform: scale(1.1);
   }
