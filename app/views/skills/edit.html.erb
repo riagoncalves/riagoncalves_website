@@ -1,8 +1,13 @@
 <section>
-  <h1>Editing Skill</h1>
+  <div class="control-bar">
+      <div class="flex justc-c align-c">
+        <h3 class="flex-1">Editing Skill</h3>
+        <div class="flex-1 tar">
+          <%= link_to '← Back', skills_path, class: 'btn btn-secundary' %>
+          <%= link_to 'Show', @skill, class: 'btn btn-secundary' %>
+        </div>
+      </div>
+  </div>
 
   <%= render 'form' %>
-
-  <%= link_to 'Show', @skill %> |
-  <%= link_to 'Back', skills_path %>
 </section>

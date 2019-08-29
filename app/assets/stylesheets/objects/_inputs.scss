@@ -7,6 +7,29 @@ form {
     }
   }
 
+  &.form-white {
+    width: 50%;
+
+    label {
+      width: 20%;
+      color: $white;
+      font-weight: $bold;
+    }
+
+    input[type=submit] {
+      margin-top: 20px;
+      color: $main-gray;
+    }
+
+    input[type=file] {
+      color: $white;
+    }
+
+    input[type=text] {
+      width: 90%;
+    }
+  }
+
   .field {
     width: 100%;
     padding: 25px 10px;
@@ -25,6 +48,7 @@ input[type=text], input[type=email], input[type=password] {
   font-size: $fs-14;
   border: none;
   border-bottom: 1px solid $light-gray;
+  background: transparent;
 
   &:focus, &:hover {
     outline: none;
