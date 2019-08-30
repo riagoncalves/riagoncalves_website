@@ -11,4 +11,23 @@ table {
   th, td {
     border: 1px solid $white;
   }
+
+  td {
+    padding: 10px;
+    text-align: center;
+
+    img {
+      max-width: 50px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: underline;
+      padding-left: 10px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
 }
