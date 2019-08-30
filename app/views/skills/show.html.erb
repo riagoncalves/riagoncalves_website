@@ -1,16 +1,25 @@
 <section>
-  <p id="notice"><%= notice %></p>
-
-  <p>
-    <strong>Icon</strong>
-    <%= image_tag @skill.icon.url %>
-  </p>
-
-  <p>
-    <strong>Name</strong>
-    <%= @skill.name %>
-  </p>
-
-  <%= link_to 'Edit', edit_skill_path(@skill) %> |
-  <%= link_to 'Back', skills_path %>
+  <div class="control-bar">
+    <div class="flex justc-c align-c">
+      <h3 class="flex-1"><%= @skill.name %></h3>
+      <div class="flex-1 tar">
+      <%= link_to '← Back', skills_path, class: 'btn btn-secundary' %>
+        <%= link_to 'Edit', edit_skill_path(@skill), class: 'btn btn-secundary' %>
+      </div>
+    </div>
+  </div>
+  <div class="flex w-100 h-100 flex-column justc-c align-c">
+    <p id="notice"><%= notice %></p>
+    
+     <% if @skill.icon.url %>
+      <p>
+        <%= image_tag @skill.icon.url, class: 'w-150px' %>
+      </p>
+    <% end %>
+    <div class="pt-10">
+      <p>
+        <%= @skill.name %>
+      </p>
+    </div>
+  </div>
 </section>

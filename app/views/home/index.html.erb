@@ -1,0 +1,39 @@
+<main>
+  <section class="s-1 flex align-c justc-end">
+    <div class="tar">
+      <%= image_tag @profile.image.url, class: 'ig-profile'%>
+      <h1><%= @profile.name %></h1>
+      <h2><%= @profile.description %></h2>
+    </div>
+    <div class="bot-fade"></div>
+  </section>
+
+  <section class="s-2 tac">
+    <h1>What I do</h1>
+    <ul class="skills flex justc-c align-c f-wrap">
+      <% @skills.each do |skill| %>
+        <li>
+          <object data="<%= skill.icon.url %>" type="image/svg+xml">
+            <img src="<%= skill.icon.url %>" alt="<%= skill.name %>">
+          </object>
+          <p><%= skill.name %></p>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+</main>
+
+<footer class="flex">
+  <p>Contact me</p>
+  <ul class="social flex flex-1 justc-end">
+    <% @contacts.each do |contact| %>
+      <li>
+        <a href="<%= contact.link %>" target="_blank">
+          <object data="<%= contact.icon.url %>" type="">
+            <img src="<%= contact.icon.url %>" alt="<%= contact.social %>">
+          </object>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</footer>

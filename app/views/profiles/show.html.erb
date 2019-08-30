@@ -1,22 +1,33 @@
 <section>
-  <p id="notice"><%= notice %></p>
+  <div class="control-bar">
+    <div class="flex justc-c align-c">
+      <h3 class="flex-1"><%= @profile.try(:name) %></h3>
+      <div class="flex-1 tar">
+        <%= link_to 'Edit', edit_profile_path(@profile), class: 'btn btn-secundary' %>
+      </div>
+    </div>
+  </div>
 
-  <% if @profile.image.url %>
-    <p>
-      <strong>Image</strong>
-      <%= image_tag @profile.image.url %>
-    </p>
-  <% end %>
+  <div class="flex w-100 h-100 flex-column justc-c align-c">
+    <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Name</strong>
-    <%= @profile.name %>
-  </p>
+    <% if @profile.image.url %>
+      <p>
+        <%= image_tag @profile.image.url %>
+      </p>
+    <% end %>
 
-  <p>
-    <strong>Description</strong>
-    <%= @profile.description %>
-  </p>
+    <div class="pt-10">
+      <p>
+        <%= @profile.name %>
+      </p>
+    </div>
 
-  <%= link_to 'Edit', edit_profile_path(@profile) %>
+    <div class="pt-10">
+      <p>
+        <%= @profile.description %>
+      </p>
+    </div>
+
+  </div>
 </section>

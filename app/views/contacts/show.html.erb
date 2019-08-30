@@ -1,21 +1,33 @@
 <section>
-  <p id="notice"><%= notice %></p>
+  <div class="control-bar">
+    <div class="flex justc-c align-c">
+      <h3 class="flex-1"><%= @contact.social %></h3>
+      <div class="flex-1 tar">
+      <%= link_to '← Back', contacts_path, class: 'btn btn-secundary' %>
+        <%= link_to 'Edit', edit_contact_path(@contact), class: 'btn btn-secundary' %>
+      </div>
+    </div>
+  </div>
 
-  <p>
-    <strong>Icon</strong>
-    <%= image_tag @contact.icon.url %>
-  </p>
+  <div class="flex w-100 h-100 flex-column justc-c align-c">
+    <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Social</strong>
-    <%= @contact.social %>
-  </p>
+    <% if @contact.icon.url %>
+      <p>
+        <%= image_tag @contact.icon.url, class: 'w-150px' %>
+      </p>
+    <% end %>
 
-  <p>
-    <strong>Link</strong>
-    <%= @contact.link %>
-  </p>
+    <div class="pt-10">
+      <p>
+        <%= @contact.social %>
+      </p>
+    </div>
 
-  <%= link_to 'Edit', edit_contact_path(@contact) %> |
-  <%= link_to 'Back', contacts_path %>
+    <div class="pt-10">
+      <p>
+        <%= link_to 'Open', @contact.link, target: "_blank", class: 'btn btn-secundary' %>
+      </p>
+    </div>
+  </div>
 </section>
