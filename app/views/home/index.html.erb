@@ -13,9 +13,7 @@
     <ul class="skills flex justc-c align-c f-wrap">
       <% @skills.each do |skill| %>
         <li>
-          <object data="<%= skill.icon.url %>" type="image/svg+xml">
-            <img src="<%= skill.icon.url %>" alt="<%= skill.name %>">
-          </object>
+          <%= image_tag skill.icon.url, alt:skill.name %>
           <p><%= skill.name %></p>
         </li>
       <% end %>
@@ -28,11 +26,9 @@
   <ul class="social flex flex-1 justc-end">
     <% @contacts.each do |contact| %>
       <li>
-        <a href="<%= contact.link %>" target="_blank">
-          <object data="<%= contact.icon.url %>" type="">
-            <img src="<%= contact.icon.url %>" alt="<%= contact.social %>">
-          </object>
-        </a>
+        <%= link_to(contact.link, target:'_blank') do %>
+          <img src="<%= contact.icon.url %>" alt="<%= contact.social %>">
+        <% end %>
       </li>
     <% end %>
   </ul>

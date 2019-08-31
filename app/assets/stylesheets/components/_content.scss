@@ -18,6 +18,11 @@ main {
 
     h1, h2 {
       padding: 0;
+      line-height: 1;
+    }
+
+    h2 {
+      font-weight: $light;
     }
   }
 
@@ -45,15 +50,15 @@ main {
   .skills {
     padding-top: 20px;
 
-    object {
+    img {
       width: 100%;
       max-width: 150px;
       padding: 25px;
       transition: 200ms all;
-
-     &:hover {
-       transform: scale(1.2);
-     } 
+      
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }

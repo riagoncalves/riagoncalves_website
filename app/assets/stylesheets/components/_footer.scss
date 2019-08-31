@@ -5,12 +5,12 @@
     max-width: 30px;
     transition: 200ms all;
 
-    &:hover {
+    &:hover {
       transform: scale(1.2);
-    } 
+    }
   }
 
-  object {
+  img {
     width: 100%;
     pointer-events: none;
   }
