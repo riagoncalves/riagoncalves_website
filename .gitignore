@@ -6,6 +6,7 @@
 
 .env
 push_db.rb
+sync_db.rb
 
 # Ignore bundler config.
 /.bundle
