@@ -9,7 +9,7 @@ gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'devise'
+gem "devise", ">= 4.7.1"
 gem 'dotenv-rails'
 
 # Use CoffeeScript for .coffee assets and views
